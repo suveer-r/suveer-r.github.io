@@ -458,14 +458,13 @@ nav #big-nav li {
 .divider {
     position: relative;
     top: 64px;
-    opacity: 0.69;
     height: 1px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     background: #00bfa9;
-    background: -webkit-gradient(linear, left top, right top, from(#00bfa9),color-stop(200%, #0076bf));
-    background: linear-gradient(90deg, #00bfa9 0%,#0076bf 200%); 
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), color-stop(50%, #00bfa9), to(rgba(255, 255, 255, 0.1)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, #00bfa9 50%, rgba(255, 255, 255, 0.1) 100%); 
 }
 .divider:after, .divider:before {
     content: "";
