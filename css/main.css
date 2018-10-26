@@ -475,6 +475,7 @@ nav #big-nav li {
 
 .flowing-text {
     margin: 1.9rem auto !important;
+    height: inherit;
     background: linear-gradient(-135deg, #00bfa9 31%,#0076bf 150%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
