@@ -131,14 +131,14 @@ color: #00ffa9;
             transform: translateY(0px);
     opacity: 0 !important;
 }
-#navbar .scrolled svg {
+#navbar .scrolled #logo-svg {
             -webkit-transform: translateY(0px) !important;
                     transform: translateY(0px) !important;
     opacity: 1 !important;
 }
 
 @media only screen and (max-width: 600px) {
-   #navbar .scrolled svg {
+   #navbar .scrolled #logo-svg {
             -webkit-transform: translateY(10px) !important;
                     transform: translateY(10px) !important;
     opacity: 1 !important;
@@ -350,7 +350,7 @@ nav #big-nav li {
     transition: top 200ms ease-in-out;
 }
 
-.brand-logo svg{
+.brand-logo #logo-svg{
 /*
     -webkit-transition-delay: 100ms;
         transition-delay: 100ms;
@@ -488,9 +488,16 @@ nav #big-nav li {
 }
 
 .quote {
-    margin: 1em auto;
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #fff;
+}
+.quote::after {
+    content: '';
+    left: 10%;
+    position: absolute;
+    margin: 0 auto;
+    width: 80%;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), color-stop(50%, #ea3d0f), to(rgba(255, 255, 255, 0.1)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, #ea3d0f 50%, rgba(255, 255, 255, 0.1) 100%); 
 }
 
 .uline {
