@@ -8,15 +8,28 @@
     background: transparent;
     text-rendering: optimizeLegibility;
     }
-
+h3 {
+    line-height: 130%;
+}
 nav {
   color: #fff;
-/*  background-color: #000;*/
+  background-color: transparent;
   width: 100%;
   height: 64px;
-  line-height: 56px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  line-height: 64px;
 }
-
+nav ul a:hover {
+    background: transparent;
+}
+.sidenav {
+  height: 100%;
+    width: 50%;
+    padding-top: 64px;
+  background-color: #00bfa9;
+  z-index: 998;
+}
 .bluegreen {
     background-color: #00bfa9 !important;
 }
@@ -77,11 +90,10 @@ color: #00ffa9;
 .first {
     padding: 64px 0;
     position: relative;
-/*    min-height: 100vh;*/
     width: 100%;
     background-color: #eee;
  }
-.zero:after, .first:after, .second:after, .third:after {
+.zero::after, .first::after, .second::after, .third::after, .fourth::after {
     content: "";
   display: table;
   clear: both;
@@ -97,9 +109,7 @@ color: #00ffa9;
 .second {
     padding: 64px 0;
     position: relative;
-/*    min-height: 100vh;*/
     width: 100%;
-/*    background-color: #ea3d0f;*/
     background-color: #eee;
     
 }
@@ -109,14 +119,21 @@ color: #00ffa9;
     min-height: 100vh;
     width: 100%;
     background-color: #32323e;
-    
 }
-
+.fourth {
+    position: relative;
+    width: 100%;
+    background: transparent;
+}
+.social {
+    height: 100px;
+}
 .navbar-fixed {
     width: 100%;
   position: fixed;
   height: 64px;
   z-index: 999;
+    color: #fff;
     background: transparent;
     -webkit-transition: background 500ms ease-in-out;
     transition: background 500ms ease-in-out;
@@ -137,12 +154,53 @@ color: #00ffa9;
     opacity: 1 !important;
 }
 
-@media only screen and (max-width: 600px) {
-   #navbar .scrolled #logo-svg {
-            -webkit-transform: translateY(10px) !important;
-                    transform: translateY(10px) !important;
-    opacity: 1 !important;
-} 
+.brand-logo {
+    top: -64px;
+    overflow: hidden;
+    -webkit-transition: top 200ms ease-in-out;
+    transition: top 200ms ease-in-out;
+}
+
+.brand-logo #logo-svg{
+/*
+    -webkit-transition-delay: 100ms;
+        transition-delay: 100ms;
+*/
+    -webkit-transition-duration: 250ms !important;
+            transition-duration: 250ms !important;
+    -webkit-transition: -webkit-transform opacity ease-in-out;
+    transition: -webkit-transform opacity ease-in-out;
+    transition: transform opacity ease-in-out;
+    transition: transform opacity ease-in-out, -webkit-transform opacity ease-in-out;
+    -webkit-transform: translateY(64px);
+            transform: translateY(64px);
+    opacity: 0;
+    height: 64px;
+    margin: auto;
+}
+.brand-name {
+    -webkit-transition-delay: 100ms;
+            transition-delay: 100ms;
+    -webkit-transition-duration: 300ms !important;
+            transition-duration: 300ms !important;
+    opacity: 1;
+    -webkit-transform: translateY(64px);
+            transform: translateY(64px);
+    -webkit-transition: -webkit-transform opacity ease-in-out;
+    transition: -webkit-transform opacity ease-in-out;
+    transition: transform opacity ease-in-out;
+    transition: transform opacity ease-in-out, -webkit-transform opacity ease-in-out;
+    margin: auto;
+}
+.sidenav li > a {
+  color: #fff;
+}
+
+.sidenav li > a:hover {
+  background-color: rgba(0, 255, 169, 0.18);
+}
+.sidenav li .nav-list.active {
+    background-color: rgba(0, 255, 169, 0.18);
 }
 
 .footer {
@@ -154,7 +212,6 @@ color: #00ffa9;
             transform: rotate(-1deg);
 */
     position: fixed;
-    display: inline-block;
     bottom: 0em;
     right: -1em;
     min-height: 21px;
@@ -172,8 +229,8 @@ clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
     background-color: #00bfa9;
 }
 
-.footer-child a {
-    cursor: alias;
+.footer-child p {
+    cursor: crosshair;
     color: #eee;
 }
 .footer-child {
@@ -184,34 +241,6 @@ clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
     margin: auto 3% auto auto;
 }
 
-/*
-@media only screen and (max-width: 993px) {
-    .footer {
-        height: 20px;
-        -webkit-transform-origin: right;
-            transform-origin: right;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-    }
-   .footer-child {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
-} 
-}
-@media only screen and (max-width: 601px) {
-    .footer {
-        height: 20px;
-        -webkit-transform-origin: right;
-            transform-origin: right;
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-    }
-   .footer-child {
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
-} 
-}
-*/
 .nav-list {
     text-transform: uppercase;
     margin: auto;
@@ -247,16 +276,14 @@ nav #big-nav li {
         transition: all 200ms ease-in-out;
         padding: 0; }
     nav #big-nav li:hover {
+        color: #fff;
         -webkit-box-shadow: inset 0 -4px #fff;
                 box-shadow: inset 0 -4px #fff;
     }
-    nav #big-nav li .nav-list {
-/*
-        -webkit-transition: all 100ms ease-in-out;
-        transition: all 100ms ease-in-out;
-*/
+nav #big-nav li:hover a {
+    color: #fff;
 }
-    #big-nav li .nav-list.active {
+    #big-nav li a.active {
         will-change: left, right;
         color: #fff;
     -webkit-box-shadow: inset 0 5px #00ffa9;
@@ -268,7 +295,11 @@ nav #big-nav li {
         display: block;
         padding: 0 15px;
 }
-
+@media only screen and (min-width: 601px) {
+  nav a.sidenav-trigger {
+    display: none;
+  }
+}
 .menu-2 {
   position: relative;
   display: inline-block;
@@ -341,48 +372,6 @@ nav #big-nav li {
     -webkit-transform: scale(0.2);
             transform: scale(0.2);
 }
-}
-
-.brand-logo {
-    top: -64px;
-    overflow: hidden;
-    -webkit-transition: top 200ms ease-in-out;
-    transition: top 200ms ease-in-out;
-}
-
-.brand-logo #logo-svg{
-/*
-    -webkit-transition-delay: 100ms;
-        transition-delay: 100ms;
-*/
-    -webkit-transition-duration: 250ms !important;
-            transition-duration: 250ms !important;
-    -webkit-transition: -webkit-transform opacity ease-in-out;
-    transition: -webkit-transform opacity ease-in-out;
-    transition: transform opacity ease-in-out;
-    transition: transform opacity ease-in-out, -webkit-transform opacity ease-in-out;
-    -webkit-transform: translateY(64px);
-            transform: translateY(64px);
-    opacity: 0;
-    height: 64px;
-    margin: auto;
-}
-.brand-name {
-    -webkit-transition-delay: 100ms;
-            transition-delay: 100ms;
-    -webkit-transition-duration: 300ms !important;
-            transition-duration: 300ms !important;
-    opacity: 1;
-    -webkit-transform: translateY(64px);
-            transform: translateY(64px);
-    -webkit-transition: -webkit-transform opacity ease-in-out;
-    transition: -webkit-transform opacity ease-in-out;
-    transition: transform opacity ease-in-out;
-    transition: transform opacity ease-in-out, -webkit-transform opacity ease-in-out;
-    margin: auto;
-}
-.sidenav li .nav-list.active {
-    background-color: rgba(0, 255, 169, 0.18);
 }
 
 .intro-logo {
@@ -528,3 +517,142 @@ nav #big-nav li {
     border: 1px solid #fff;
     border-radius: 10%;
 }
+
+
+.fb {
+    width: 100%;
+    height: 100%;
+    background: #3b5998;
+    color: #ffffff !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.fb a {
+    color: #fff;
+}
+.fb:hover {
+    -webkit-box-shadow:inset 0 -100px #fff;
+            box-shadow:inset 0 -100px #fff;
+}
+.fb:hover a {
+    color: #3b5958;
+}
+.twit {
+    width: 100%;
+    height: 100%;
+    background: #1da1f2;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.twit a {
+    color: #fff;
+}
+.twit:hover {
+    -webkit-box-shadow: inset 0 -100px #fff;
+            box-shadow: inset 0 -100px #fff;
+}
+.twit:hover a {
+    color: #1da1f2;
+}
+.insta {
+    width: 100%;
+    height: 100%;
+    background: #c32aa3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.insta a {
+    color: #fff;
+}
+.insta:hover {
+    -webkit-box-shadow: inset 0 -100px #fff;
+            box-shadow: inset 0 -100px #fff;
+}
+.insta:hover a {
+    color: #c32aa3;
+}
+.behance {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.behance a {
+    color: #fff;
+}
+.behance:hover {
+    -webkit-box-shadow: inset 0 -100px #fff;
+            box-shadow: inset 0 -100px #fff;
+}
+.behance:hover a {
+    color: #000;
+}
+.dribbble {
+    width: 100%;
+    height: 100%;
+    background: #ea4c89;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.dribbble:hover {
+    -webkit-box-shadow: inset 0 -100px #fff;
+            box-shadow: inset 0 -100px #fff;
+}
+.dribbble a {
+    color: #fff;
+}
+.dribbble:hover a {
+    color: #ea4c89;
+}
+.discord {
+    width: 100%;
+    height: 100%;
+    background: #7289da;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.discord:hover {
+    -webkit-box-shadow: inset 0 -100px #fff;
+            box-shadow: inset 0 -100px #fff;
+}
+.discord a {
+    color: #fff;
+}
+.discord:hover a {
+    color: #7289da;
+}
+.email {
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.email:hover {
+    -webkit-box-shadow: inset 0 -100px #000s;
+            box-shadow: inset 0 -100px #000;
+}
+
+
