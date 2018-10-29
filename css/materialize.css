@@ -2254,6 +2254,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
+     -moz-text-decoration: underline dotted;
           text-decoration: underline dotted;
   /* 2 */
 }
@@ -2612,9 +2613,11 @@ a {
 
 .valign-wrapper {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -2629,7 +2632,7 @@ a {
 }
 
 /* 2dp elevation modified*/
-.z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -2673,6 +2676,12 @@ a {
 .hoverable:hover {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
 }
 
 blockquote {
@@ -2944,12 +2953,15 @@ ul.staggered-list li {
   overflow: hidden;
   min-height: 50px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0px;
@@ -3412,6 +3424,7 @@ table span.badge {
 .material-icons {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
 }
 
@@ -4256,7 +4269,13 @@ table span.badge {
   }
 }
 
-
+nav {
+  color: #fff;
+  background-color: #ee6e73;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
 
 nav.nav-extended {
   height: auto;
@@ -4290,7 +4309,7 @@ nav .nav-wrapper {
   height: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 993px) {
   nav a.sidenav-trigger {
     display: none;
   }
@@ -4372,6 +4391,10 @@ nav ul li {
   padding: 0;
 }
 
+nav ul li.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 nav ul a {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
@@ -4391,6 +4414,10 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul
 nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-small > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons {
   height: inherit;
   line-height: inherit;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 nav ul.left {
@@ -4434,7 +4461,11 @@ nav .input-field label.active i {
   color: #fff;
 }
 
-
+.navbar-fixed {
+  position: relative;
+  height: 56px;
+  z-index: 997;
+}
 
 .navbar-fixed nav {
   position: fixed;
@@ -4447,6 +4478,9 @@ nav .input-field label.active i {
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 64px;
     line-height: 64px;
+  }
+  .navbar-fixed {
+    height: 64px;
   }
 }
 
@@ -4502,7 +4536,7 @@ h2 {
 
 h3 {
   font-size: 2.92rem;
-  line-height: 130%;
+  line-height: 110%;
   margin: 1.9466666667rem 0 1.168rem 0;
 }
 
@@ -4519,7 +4553,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 110%;
   margin: 0.7666666667rem 0 0.46rem 0;
 }
@@ -4767,6 +4801,7 @@ small {
 
 .card.horizontal {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -4793,13 +4828,16 @@ small {
 
 .card.horizontal .card-stacked {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   position: relative;
@@ -4807,6 +4845,7 @@ small {
 
 .card.horizontal .card-stacked .card-content {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
@@ -4949,12 +4988,15 @@ small {
   font-weight: 300;
   color: #fff;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: default;
@@ -4984,7 +5026,7 @@ small {
   overflow-y: hidden;
   height: 48px;
   width: 100%;
-/*  background-color: #fff;*/
+  background-color: #fff;
   margin: 0 auto;
   white-space: nowrap;
 }
@@ -5010,12 +5052,14 @@ small {
 
 .tabs.tabs-fixed-width {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
 .tabs.tabs-fixed-width .tab {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
@@ -5070,11 +5114,13 @@ small {
 @media only screen and (max-width: 992px) {
   .tabs {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
   .tabs .tab {
     -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
@@ -5352,10 +5398,12 @@ button.btn-floating {
   top: 64px;
   bottom: auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
@@ -5375,6 +5423,7 @@ button.btn-floating {
 
 .fixed-action-btn.toolbar ul {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 0;
@@ -5384,6 +5433,7 @@ button.btn-floating {
 
 .fixed-action-btn.toolbar ul li {
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   display: inline-block;
@@ -5800,6 +5850,7 @@ body.keyboard-focused .dropdown-content li:focus {
 
 .collapsible-header {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
@@ -6063,12 +6114,6 @@ label {
   color: #d1d1d1;
 }
 ::-ms-input-placeholder {
-  color: #d1d1d1;
-}
-::-webkit-input-placeholder {
-  color: #d1d1d1;
-}
-:-ms-input-placeholder {
   color: #d1d1d1;
 }
 ::placeholder {
@@ -7486,7 +7531,7 @@ input[type=range]::-ms-thumb {
 
 .sidenav {
   position: fixed;
-  width: 50%;
+  width: 300px;
   left: 0;
   top: 0;
   margin: 0;
@@ -7496,10 +7541,8 @@ input[type=range]::-ms-thumb {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-    color: #fff;
-  background-color: #00bfa9;
-  z-index: 998;
-    padding-top: 75px;
+  background-color: #fff;
+  z-index: 999;
   overflow-y: auto;
   will-change: transform;
   -webkit-backface-visibility: hidden;
@@ -7531,7 +7574,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li > a {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.87);
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -8443,19 +8486,10 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s 1s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
+  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s, visibility 0s 1s;
+  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8508,19 +8542,10 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s,
- -webkit-transform .3s;
+  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s, visibility 0s;
+  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
   z-index: -1;
 }
 
@@ -8613,10 +8638,12 @@ input[type=range]::-ms-thumb {
 
 .datepicker-container.modal-content {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
@@ -8624,9 +8651,11 @@ input[type=range]::-ms-thumb {
 
 .datepicker-controls {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 280px;
@@ -8635,6 +8664,7 @@ input[type=range]::-ms-thumb {
 
 .datepicker-controls .selects-container {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -8671,6 +8701,7 @@ input[type=range]::-ms-thumb {
 /* Date Display */
 .datepicker-date-display {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 auto;
       -ms-flex: 1 auto;
           flex: 1 auto;
   background-color: #26a69a;
@@ -8696,6 +8727,7 @@ input[type=range]::-ms-thumb {
 /* Calendar */
 .datepicker-calendar-container {
   -webkit-box-flex: 2.5;
+  -webkit-flex: 2.5 auto;
       -ms-flex: 2.5 auto;
           flex: 2.5 auto;
 }
@@ -8765,9 +8797,11 @@ input[type=range]::-ms-thumb {
   margin: 0 auto;
   padding-bottom: 5px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -8792,11 +8826,13 @@ input[type=range]::-ms-thumb {
   .datepicker-container.modal-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .datepicker-date-display {
     -webkit-box-flex: 0;
+    -webkit-flex: 0 1 270px;
         -ms-flex: 0 1 270px;
             flex: 0 1 270px;
   }
@@ -8818,10 +8854,12 @@ input[type=range]::-ms-thumb {
 
 .timepicker-container.modal-content {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
@@ -8834,6 +8872,7 @@ input[type=range]::-ms-thumb {
 /* Clock Digital Display */
 .timepicker-digital-display {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 auto;
       -ms-flex: 1 auto;
           flex: 1 auto;
   background-color: #26a69a;
@@ -8879,6 +8918,7 @@ input[type=range]::-ms-thumb {
 /* Analog Clock Display */
 .timepicker-analog-display {
   -webkit-box-flex: 2.5;
+  -webkit-flex: 2.5 auto;
       -ms-flex: 2.5 auto;
           flex: 2.5 auto;
 }
@@ -8980,9 +9020,11 @@ input[type=range]::-ms-thumb {
   margin: 0 auto;
   padding: 5px 1rem;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -9008,6 +9050,7 @@ input[type=range]::-ms-thumb {
   .timepicker-container.modal-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
