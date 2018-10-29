@@ -88,7 +88,7 @@ color: #00ffa9;
 }
 
 .first {
-    padding: 64px 0;
+    padding-top: 64px;
     position: relative;
     width: 100%;
     background-color: #eee;
@@ -107,7 +107,7 @@ color: #00ffa9;
 }
 
 .second {
-    padding: 64px 0;
+    padding-top: 64px;
     position: relative;
     width: 100%;
     background-color: #eee;
@@ -530,15 +530,15 @@ nav #big-nav li:hover a {
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
-.fb a {
+.fb h5 {
     color: #fff;
 }
 .fb:hover {
     -webkit-box-shadow:inset 0 -100px #fff;
             box-shadow:inset 0 -100px #fff;
 }
-.fb:hover a {
-    color: #3b5958;
+.fb:hover h5 {
+    color: #3b5998;
 }
 .twit {
     width: 100%;
@@ -550,14 +550,14 @@ nav #big-nav li:hover a {
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
-.twit a {
+.twit h5 {
     color: #fff;
 }
 .twit:hover {
     -webkit-box-shadow: inset 0 -100px #fff;
             box-shadow: inset 0 -100px #fff;
 }
-.twit:hover a {
+.twit:hover h5 {
     color: #1da1f2;
 }
 .insta {
@@ -570,14 +570,14 @@ nav #big-nav li:hover a {
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
-.insta a {
+.insta h5 {
     color: #fff;
 }
 .insta:hover {
     -webkit-box-shadow: inset 0 -100px #fff;
             box-shadow: inset 0 -100px #fff;
 }
-.insta:hover a {
+.insta:hover h5 {
     color: #c32aa3;
 }
 .behance {
@@ -590,14 +590,14 @@ nav #big-nav li:hover a {
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
-.behance a {
+.behance h5 {
     color: #fff;
 }
 .behance:hover {
     -webkit-box-shadow: inset 0 -100px #fff;
             box-shadow: inset 0 -100px #fff;
 }
-.behance:hover a {
+.behance:hover h5 {
     color: #000;
 }
 .dribbble {
@@ -614,10 +614,10 @@ nav #big-nav li:hover a {
     -webkit-box-shadow: inset 0 -100px #fff;
             box-shadow: inset 0 -100px #fff;
 }
-.dribbble a {
+.dribbble h5 {
     color: #fff;
 }
-.dribbble:hover a {
+.dribbble:hover h5 {
     color: #ea4c89;
 }
 .discord {
@@ -634,16 +634,16 @@ nav #big-nav li:hover a {
     -webkit-box-shadow: inset 0 -100px #fff;
             box-shadow: inset 0 -100px #fff;
 }
-.discord a {
+.discord h5 {
     color: #fff;
 }
-.discord:hover a {
+.discord:hover h5 {
     color: #7289da;
 }
 .email {
     width: 100%;
     height: 100%;
-    background: #eee;
+    background: #444;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
