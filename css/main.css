@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -122,11 +123,39 @@ color: #00ffa9;
 }
 .fourth {
     position: relative;
+    padding-top: 64px;
     width: 100%;
-    background: transparent;
+    background: #eee;
 }
+.first .container img, .second .container img, .third .container img {
+    -webkit-animation: simpleHoverY 6s ease-in-out infinite;
+        animation: simpleHoverY 6s ease-in-out infinite;
+}
+    @-webkit-keyframes simpleHoverY {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  50% {
+    -webkit-transform: translate3d(-5px, 0px, 0);
+            transform: translate3d(-5px, 0px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0);
+            transform: translate3d(0, 0); } }
+
+@keyframes simpleHoverY {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  50% {
+    -webkit-transform: translate3d(-5px, 0px, 0);
+            transform: translate3d(-5px, 0px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0);
+            transform: translate3d(0, 0); } }
+
+
 .social {
-    height: 100px;
+    height: 64px;
 }
 .navbar-fixed {
     width: 100%;
