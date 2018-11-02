@@ -158,9 +158,9 @@ nav ul a:hover {
     background: #eee;
 }
 
-.first .container img,
-.second .container img,
-.third .container img {
+.first .container .big-img,
+.second .container .big-img,
+.third .container .big-img {
     -webkit-animation: simpleHoverY 6s ease-in-out infinite;
     animation: simpleHoverY 6s ease-in-out infinite;
 }
@@ -199,6 +199,10 @@ nav ul a:hover {
     }
 }
 
+.content h4 span {
+    -webkit-box-shadow: inset 0 -0.7rem #00ffa9;
+    box-shadow: inset 0 -0.7rem #00ffa9;
+}
 
 .social {
     height: 64px;
@@ -258,7 +262,8 @@ nav ul a:hover {
     margin: auto;
 }
 
-.brand-name {
+.brand-logo .brand-name {
+    /*    height: 64px;*/
     -webkit-transition-delay: 100ms;
     transition-delay: 100ms;
     -webkit-transition-duration: 300ms !important;
@@ -822,4 +827,25 @@ nav #big-nav li a {
 .email:hover {
     -webkit-box-shadow: inset 0 -100px #000s;
     box-shadow: inset 0 -100px #000;
+}
+
+.first-icons {
+    height: 5rem;
+}
+
+.brief {
+    margin: 1vw 0 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 2vw !important;
+}
+
+.green3-ul {
+    -webkit-box-shadow: inset 0 -5px #00ffa9;
+    box-shadow: inset 0 -5px #00ffa9;
+}
+
+.border-top-bot {
+    background: #f1f1f1;
+    border-top: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
 }

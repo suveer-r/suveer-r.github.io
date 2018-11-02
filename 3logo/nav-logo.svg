@@ -1,23 +1,29 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="264px" width="426px" viewBox="0 0 401 112" style="enable-background:new 0 0 401 112;" xml:space="preserve">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="426px" height="264px" viewBox="0 0 426 264" style="enable-background:new 0 0 426 264;" xml:space="preserve">
 <style type="text/css">
 <![CDATA[
-	.st0{
-        fill:#FFFFFF;
-    }
+	.st0{fill:#FFFFFF;}
 ]]>
 </style>
 <g>
 	<g>
-		<path class="st0" d="M135.652,44.533l2.264-23.804L156.348,5.5C144.059,15.656,137.047,29.828,135.652,44.533z"/>
-		<circle class="st0" cx="193.115" cy="50" r="43.294"/>
+		<path class="st0" d="M144.109,119.818l2.405-25.288l19.581-16.179C153.04,89.141,145.591,104.196,144.109,119.818z"/>
+		<circle class="st0" cx="205.155" cy="125.626" r="45.993"/>
 	</g>
 	<g>
-		<path class="st0" d="M395.576,48.422l-8.588,22.313c5.726-14.879,4.882-30.667-1.118-44.166L395.576,48.422z"/>
-		<circle class="st0" cx="333.115" cy="50.001" r="43.294"/>
+		<path class="st0" d="M420.238,123.95l-9.124,23.705c6.083-15.807,5.187-32.58-1.188-46.92L420.238,123.95z"/>
+		<g>
+			<path class="st0" d="M353.883,97.634c15.436,0,27.993,12.558,27.993,27.993s-12.558,27.993-27.993,27.993
+				s-27.993-12.558-27.993-27.993S338.447,97.634,353.883,97.634 M353.883,79.634c-25.401,0-45.993,20.592-45.993,45.993
+				s20.592,45.993,45.993,45.993s45.993-20.592,45.993-45.993S379.284,79.634,353.883,79.634L353.883,79.634z"/>
+		</g>
 	</g>
 	<g>
-		<path class="st0" d="M94.793,90.826L77.881,107.73l-23.909-0.005C69.915,107.729,84.349,101.271,94.793,90.826z"/>
-		<circle class="st0" cx="53.985" cy="50" r="43.294"/>
+		<path class="st0" d="M100.703,168.997l-17.966,17.958l-25.399-0.006C74.274,186.954,89.607,180.094,100.703,168.997z"/>
+		<circle class="st0" cx="57.351" cy="125.626" r="45.993"/>
 	</g>
 </g>
 </svg>
