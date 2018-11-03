@@ -9,6 +9,11 @@
     text-rendering: optimizeLegibility;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 html {
     font-family: Lato, Roboto, Open-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-weight: normal;
@@ -172,8 +177,8 @@ nav ul a:hover {
     }
 
     50% {
-        -webkit-transform: translate3d(-5px, 0px, 0);
-        transform: translate3d(-5px, 0px, 0);
+        -webkit-transform: translate3d(-3px, 0px, 0);
+        transform: translate3d(-3px, 0px, 0);
     }
 
     100% {
@@ -623,6 +628,8 @@ nav #big-nav li a {
 .quote::after {
     content: '';
     left: 10%;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
     position: absolute;
     margin: 0 auto;
     width: 80%;
@@ -631,7 +638,7 @@ nav #big-nav li a {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, #ea3d0f 50%, rgba(255, 255, 255, 0.1) 100%);
 }
 
-.uline {
+uline {
     text-decoration: underline;
     text-transform: capitalize;
 }
@@ -834,9 +841,12 @@ nav #big-nav li a {
 }
 
 .brief {
+    padding: 1rem 1rem 2vw 1rem !important;
     margin: 1vw 0 !important;
+    /*
     padding-top: 1rem !important;
     padding-bottom: 2vw !important;
+*/
 }
 
 .green3-ul {
