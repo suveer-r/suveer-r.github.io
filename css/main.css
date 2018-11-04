@@ -122,11 +122,11 @@ nav ul a:hover {
     background-color: #eee;
 }
 
-.zero::after,
-.first::after,
-.second::after,
-.third::after,
-.fourth::after {
+.zero:after,
+.first:after,
+.second:after,
+.third:after,
+.fourth:after {
     content: "";
     display: table;
     clear: both;
@@ -158,7 +158,7 @@ nav ul a:hover {
 
 .fourth {
     position: relative;
-    padding-top: 64px;
+    /*    padding-top: 64px;*/
     width: 100%;
     background: #eee;
 }
@@ -411,7 +411,7 @@ nav #big-nav li a {
     margin-top: -3px !important;
 }
 
-.sidenav-trigger::after {
+.sidenav-trigger:after {
     content: 'MENU';
     font-size: 0.7em;
     position: absolute;
@@ -584,6 +584,14 @@ nav #big-nav li a {
     padding-top: 1em !important;
 }
 
+.padding-right {
+    padding-right: 1em !important;
+}
+
+.padding-left {
+    padding-left: 1em !important;
+}
+
 .caption {
     position: relative;
     top: -1em;
@@ -625,7 +633,7 @@ nav #big-nav li a {
 
 .quote {}
 
-.quote::after {
+.quote:after {
     content: '';
     left: 10%;
     -webkit-transform: translateY(-5px);
@@ -841,7 +849,7 @@ uline {
 }
 
 .brief {
-    padding: 1rem 1rem 2vw 1rem !important;
+    padding: 1rem 1.2rem 2vw 1.2rem !important;
     margin: 1vw 0 !important;
     /*
     padding-top: 1rem !important;
@@ -858,4 +866,53 @@ uline {
     background: #f1f1f1;
     border-top: 3px solid #ddd;
     border-bottom: 3px solid #ddd;
+}
+
+.range {
+    width: 100%;
+    margin: 5px 3px;
+    background: #e1e1e1;
+    height: 5px;
+}
+
+.skill {
+    height: 5px;
+    background: transparent;
+    /*    position: absolute;*/
+}
+
+#html {
+    background: #00ffa9;
+    width: 95%;
+}
+
+#css {
+    background: #00FFA9;
+    width: 95%;
+}
+
+#js {
+    background: #00bfa9;
+    width: 30%;
+}
+
+#jq {
+    background: #00bfa9;
+    width: 45%;
+}
+
+#ai,
+#ps {
+    background: #00a1b1;
+    width: 90%;
+}
+
+#oth {
+    background: #ea3d0f;
+    width: 13%;
+}
+
+#oth2 {
+    background: #0076bf;
+    width: 100%;
 }
