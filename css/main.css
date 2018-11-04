@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
     text-rendering: optimizeLegibility;
@@ -14,7 +13,8 @@ a {
     color: inherit;
 }
 
-html {
+html,
+.st1 {
     font-family: Lato, Roboto, Open-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-weight: normal;
 }
@@ -882,13 +882,13 @@ uline {
 }
 
 #html {
-    background: #00ffa9;
-    width: 95%;
+    background: #00dfa9;
+    width: 96%;
 }
 
 #css {
-    background: #00FFA9;
-    width: 95%;
+    background: #00dfa9;
+    width: 93%;
 }
 
 #js {
@@ -901,7 +901,11 @@ uline {
     width: 45%;
 }
 
-#ai,
+#ai {
+    background: #00a1b1;
+    width: 94%;
+}
+
 #ps {
     background: #00a1b1;
     width: 90%;
