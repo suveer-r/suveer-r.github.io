@@ -873,7 +873,10 @@ uline {
     margin: 5px 3px;
     background: #e1e1e1;
     height: 5px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
+
 
 .skill {
     height: 5px;
@@ -919,4 +922,79 @@ uline {
 #oth2 {
     background: #0076bf;
     width: 100%;
+}
+
+/*frame*/
+.st0 {
+    fill: none;
+    stroke: #D1D1D1;
+    stroke-miterlimit: 10;
+}
+
+/*text*/
+.st1 {
+    fill: #616161;
+}
+
+/*radar*/
+.st2 {
+    fill: #00BFA9;
+    fill-opacity: 0.5;
+    stroke: #00BFA9;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 363;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+svg#radar:hover .st2 {
+    -webkit-animation: retrace 1s ease-in-out;
+    animation: retrace 1s ease-in-out;
+}
+
+@-webkit-keyframes retrace {
+
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dashoffset: -363;
+    }
+
+    100% {
+        stroke-dashoffset: -726;
+    }
+}
+
+@keyframes retrace {
+
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dashoffset: -363;
+    }
+
+    100% {
+        stroke-dashoffset: -726;
+    }
+}
+
+/*radar inner hidden*/
+.st3 {
+    display: none;
+    fill: #00BFA9;
+    fill-opacity: 0.5;
+    stroke: #00BFA9;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+
+/*dots*/
+.st4 {
+    fill: #00FFA9;
 }
