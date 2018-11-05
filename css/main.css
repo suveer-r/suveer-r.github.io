@@ -950,8 +950,8 @@ uline {
 }
 
 svg#radar:hover .st2 {
-    -webkit-animation: retrace 1s ease-in-out;
-    animation: retrace 1s ease-in-out;
+    -webkit-animation: retrace 2s ease-in-out;
+    animation: retrace 2s ease-in-out;
 }
 
 @-webkit-keyframes retrace {

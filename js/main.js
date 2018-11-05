@@ -36,13 +36,6 @@ $(document).ready(function () {
     });
 });
 
-
-$(document).ready(function () {
-    $('.stretch').each(function () {
-        $(this).strech_text();
-    });
-});
-
 //smoothScroll 
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
