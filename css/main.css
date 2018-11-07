@@ -13,6 +13,10 @@ a {
     color: inherit;
 }
 
+body {
+    background: #32323e;
+}
+
 html,
 .st1 {
     font-family: Lato, Roboto, Open-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -107,6 +111,7 @@ nav ul a:hover {
     position: relative;
     height: 100vh;
     width: 100%;
+    padding-bottom: 64px;
     -webkit-transform-origin: top;
     transform-origin: top;
     background-color: #00bfa9;
@@ -151,8 +156,10 @@ nav ul a:hover {
 .third {
     padding-top: 64px;
     position: relative;
-    min-height: 100vh;
+    /*    min-height: 100vh;*/
+    padding-bottom: 64px;
     width: 100%;
+    margin-bottom: 300px;
     background-color: #32323e;
 }
 
@@ -599,14 +606,14 @@ nav #big-nav li a {
 
 .divider {
     position: relative;
-    top: 64px;
+    /*    top: 64px;*/
     height: 1px;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
     background: #00bfa9;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), color-stop(50%, #00bfa9), to(rgba(255, 255, 255, 0.1)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, #00bfa9 50%, rgba(255, 255, 255, 0.1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), color-stop(50%, #fff), to(rgba(255, 255, 255, 0.1)));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, #fff 50%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .divider:after,
@@ -869,12 +876,12 @@ uline {
 }
 
 .range {
-    width: 100%;
+    width: 50%;
     margin: 5px 3px;
     background: #e1e1e1;
     height: 5px;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -939,49 +946,14 @@ uline {
 /*radar*/
 .st2 {
     fill: #00BFA9;
-    fill-opacity: 0.5;
+    fill-opacity: 0;
     stroke: #00BFA9;
     stroke-width: 3;
     stroke-miterlimit: 10;
     stroke-dasharray: 363;
-    stroke-dashoffset: 0;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-}
-
-svg#radar:hover .st2 {
-    -webkit-animation: retrace 2s ease-in-out;
-    animation: retrace 2s ease-in-out;
-}
-
-@-webkit-keyframes retrace {
-
-    0% {
-        stroke-dashoffset: 0;
-    }
-
-    50% {
-        stroke-dashoffset: -363;
-    }
-
-    100% {
-        stroke-dashoffset: -726;
-    }
-}
-
-@keyframes retrace {
-
-    0% {
-        stroke-dashoffset: 0;
-    }
-
-    50% {
-        stroke-dashoffset: -363;
-    }
-
-    100% {
-        stroke-dashoffset: -726;
-    }
+    stroke-dashoffset: 363;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 /*radar inner hidden*/
@@ -997,4 +969,22 @@ svg#radar:hover .st2 {
 /*dots*/
 .st4 {
     fill: #00FFA9;
+}
+
+.footer-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: -1;
+    background: #00bfa9;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 64px;
 }
