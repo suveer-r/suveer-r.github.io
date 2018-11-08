@@ -92,19 +92,14 @@ $(window).scroll(function () {
 
     var wScroll = $(this).scrollTop();
 
-    if (wScroll > $('.radar').offset().top - ($(window).height() / 2)) {
+    if (wScroll > $('.charts').offset().top - ($(window).height() / 2)) {
 
         $('.st2').css({
             'fill-opacity': '0.5',
             'stroke-dashoffset': '0'
         });
-    }
-
-    if (wScroll > $('.ranges').offset().top - ($(window).height() / 2)) {
-
         $('.range').css({
             'width': '100%'
         });
     }
-
 });
