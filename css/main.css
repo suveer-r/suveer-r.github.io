@@ -121,7 +121,7 @@ nav ul a:hover {
     position: relative;
     height: 100vh;
     width: 100%;
-    padding-bottom: 64px;
+    padding: 64px 0;
     -webkit-transform-origin: top;
     transform-origin: top;
     background-color: var(--mycol-1);
