@@ -2,7 +2,9 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
     $('.tooltipped').tooltip();
-    $('.tabs').tabs();
+     $('.stretch').each(function () {
+        $(this).strech_text();
+    });
 });
 
 
@@ -31,13 +33,6 @@ $.fn.strech_text = function () {
         elmt.addClass('justify');
     }
 };
-
-
-$(document).ready(function () {
-    $('.stretch').each(function () {
-        $(this).strech_text();
-    });
-});
 
 //smoothScroll 
 $(function () {
