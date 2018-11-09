@@ -2,23 +2,28 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="426px" height="264px" viewBox="0 0 426 264" enable-background="new 0 0 426 264" xml:space="preserve">
+	 width="426px" height="264px" viewBox="0 0 426 264" style="enable-background:new 0 0 426 264;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#FFFFFF;}
+]]>
+</style>
 <g>
-	<g>
-		<path fill="#FFFFFF" d="M141.311,119.165l2.405-25.288l19.581-16.179C150.242,88.488,142.793,103.543,141.311,119.165z"/>
-		<circle fill="#FFFFFF" cx="202.356" cy="124.973" r="45.993"/>
-	</g>
-	<g>
-		<path fill="#FFFFFF" d="M417.44,123.297l-9.124,23.704c6.083-15.806,5.187-32.579-1.188-46.919L417.44,123.297z"/>
+	<g id="right">
+		<path class="st0" d="M417.44,123.297l-9.124,23.704c6.083-15.806,5.187-32.579-1.188-46.919L417.44,123.297z"/>
 		<g>
-			<path fill="#FFFFFF" d="M351.085,96.98c15.438,0,27.993,12.559,27.993,27.993c0,15.436-12.559,27.993-27.993,27.993
+			<path class="st0" d="M351.085,96.98c15.438,0,27.993,12.559,27.993,27.993c0,15.436-12.56,27.993-27.993,27.993
 				s-27.993-12.558-27.993-27.993C323.092,109.539,335.649,96.98,351.085,96.98 M351.085,78.98c-25.4,0-45.993,20.593-45.993,45.993
 				s20.593,45.993,45.993,45.993c25.401,0,45.993-20.593,45.993-45.993S376.486,78.98,351.085,78.98L351.085,78.98z"/>
 		</g>
 	</g>
-	<g>
-		<path fill="#FFFFFF" d="M97.905,168.344l-17.967,17.958l-25.398-0.006C71.476,186.301,86.809,179.439,97.905,168.344z"/>
-		<circle fill="#FFFFFF" cx="54.553" cy="124.973" r="45.993"/>
+	<g id="middle">
+		<path class="st0" d="M141.311,119.165l2.405-25.288l19.581-16.179C150.242,88.488,142.793,103.543,141.311,119.165z"/>
+		<circle class="st0" cx="202.356" cy="124.973" r="45.993"/>
+	</g>
+	<g id="left">
+		<path class="st0" d="M97.905,168.344l-17.967,17.958l-25.398-0.006C71.476,186.301,86.809,179.439,97.905,168.344z"/>
+		<circle class="st0" cx="54.553" cy="124.973" r="45.993"/>
 	</g>
 </g>
 </svg>

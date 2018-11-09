@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.tabs').tabs();
 });
 
+
 //stretch text, append .stretch
 $.fn.strech_text = function () {
     var elmt = $(this),
@@ -94,7 +95,7 @@ $(window).scroll(function () {
 
     if (wScroll > $('.charts').offset().top - ($(window).height() / 2)) {
 
-        $('.st2').css({
+        $('.radar-box').css({
             'fill-opacity': '0.5',
             'stroke-dashoffset': '0'
         });
