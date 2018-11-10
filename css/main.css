@@ -521,7 +521,7 @@ nav #big-nav li a {
 .logo {
     margin: 0;
     opacity: 0;
-    height: 35vh;
+    height: 33vh;
     margin-top: 15px;
     margin-bottom: 15px;
 
@@ -1174,4 +1174,6 @@ uline {
 .head {
     -ms-flex-item-align: start;
     align-self: flex-start;
+    width: 100%;
+    max-width: 600px;
 }
