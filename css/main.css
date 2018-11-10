@@ -20,15 +20,9 @@
 
 body {
     background: var(--mycol-1);
-    opacity: 0;
-    overflow: hidden;
-    -webkit-transition: all 1s ease-in;
-    transition: all 1s ease-in;
-    -webkit-transition-delay: 500ms;
-    transition-delay: 500ms;
-    -webkit-transition-delay: overflow 1s;
-    transition-delay: overflow 1s;
+    opacity: 1;
 }
+
 
 a {
     text-decoration: none;
@@ -526,25 +520,134 @@ nav #big-nav li a {
 
 .logo {
     margin: 0;
+    opacity: 0;
     height: 35vh;
     margin-top: 15px;
     margin-bottom: 15px;
-    -ms-flex-line-pack: center;
-    align-content: center;
+
     background-image: url(/3logo/untitled-white.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-transition: -webkit-transform 300ms ease-in-out;
-    transition: -webkit-transform 300ms ease-in-out;
-    transition: transform 300ms ease-in-out;
-    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+.logo svg {
+    height: 55vh;
+    width: 100%;
 }
 
 @media only screen and (min-width: 601px) {
     .logo.scrolled {
         -webkit-transform: scale(0.2);
         transform: scale(0.2);
+    }
+}
+
+body.loaded .head .logo {
+    -webkit-animation: loaded .5s ease-in;
+    animation: loaded .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes loaded {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loaded {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.head h2,
+.head .caption,
+.head #subtext {
+    opacity: 0;
+}
+
+body.loaded .head h2,
+body.loaded .head .caption,
+body.loaded .head #subtext {
+    -webkit-animation: loaded2 .5s ease-in;
+    animation: loaded2 .5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+
+}
+
+@-webkit-keyframes loaded2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loaded2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+navbar {
+    -webkit-transform: translateY(-64px);
+    transform: translateY(-64px);
+}
+
+body.loaded navbar {
+    -webkit-animation: loaded3 0.5s ease-in;
+    animation: loaded3 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes loaded3 {
+    0% {
+        -webkit-transform: translateY(-64px);
+        transform: translateY(-64px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes loaded3 {
+    0% {
+        -webkit-transform: translateY(-64px);
+        transform: translateY(-64px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -1056,10 +1159,11 @@ uline {
 
 .git {
     position: fixed;
-    bottom: 2em;
-    left: 2em;
+    font-size: .8em;
+    bottom: 1em;
+    left: 1em;
     background: transparent;
-    color: #d1d1d1;
+    color: var(--light3);
 }
 
 .git:before,

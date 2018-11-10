@@ -8,10 +8,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function ($) {
-    $('body').css({
-        'opacity': '1',
-        'overflow': 'auto'
-    });
+    $('body').addClass('loaded');
 });
 
 
@@ -69,7 +66,7 @@ $(function () {
     });
 });
 $(function () {
-    var stickyHeaderTop = 150;
+    var stickyHeaderTop = 100;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > stickyHeaderTop) {
