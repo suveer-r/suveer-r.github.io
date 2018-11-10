@@ -530,8 +530,8 @@ nav #big-nav li a {
     background-repeat: no-repeat;
     background-position: center;
 
-    -webkit-transition: all 300ms ease-in;
-    transition: all 300ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
 }
 
 .logo svg {
