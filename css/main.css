@@ -18,6 +18,18 @@
     --dark3: #32323e;
 }
 
+body {
+    background: var(--mycol-1);
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    -webkit-transition-delay: 500ms;
+    transition-delay: 500ms;
+    -webkit-transition-delay: overflow 1s;
+    transition-delay: overflow 1s;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -25,10 +37,6 @@ a {
 
 a[target="_blank"] {
     cursor: alias;
-}
-
-body {
-    background: var(--dark3);
 }
 
 html,
@@ -257,12 +265,16 @@ nav ul a:hover {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 0 !important;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 #navbar .scrolled #logo-svg {
     -webkit-transform: translateY(0px) !important;
     transform: translateY(0px) !important;
     opacity: 1 !important;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .brand-logo {
@@ -340,11 +352,10 @@ nav ul a:hover {
 .footer {
     -webkit-clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.footer.scrolled {
     background-color: var(--mycol-1);
 }
+
+.footer.scrolled {}
 
 .footer-child p {
     cursor: crosshair;
@@ -524,10 +535,10 @@ nav #big-nav li a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-transition: -webkit-transform 150ms ease-in-out;
-    transition: -webkit-transform 150ms ease-in-out;
-    transition: transform 150ms ease-in-out;
-    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    transition: -webkit-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 @media only screen and (min-width: 601px) {
@@ -991,15 +1002,6 @@ uline {
 
 .footer-main {
     height: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     z-index: -1;
     background: var(--mycol-1);
     width: 100%;
@@ -1033,21 +1035,39 @@ uline {
 }
 
 .toast.rounded {
-    background: var(--light3) !important;
-    border: 1px solid var(--dark3) !important;
-    color: var(--mycol-1) !important;
+    color: var(--light3) !important;
+    border: 2px solid var(--mycol-1) !important;
+    background: var(--dark3) !important;
 }
 
 .toast-action {
-    color: var(--dark3) !important;
+    color: var(--light3) !important;
 }
 
 .toast-action:hover {
-    color: var(--accent-2) !important;
+    color: var(--accent) !important;
 }
 
 @media only screen and (max-width: 600px) {
     .toast {
         text-align: center;
     }
+}
+
+.git {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    background: transparent;
+    color: #d1d1d1;
+}
+
+.git:before,
+.git:after {
+    content: ' / ';
+}
+
+.head {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
 }

@@ -2,8 +2,15 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
     $('.tooltipped').tooltip();
-     $('.stretch').each(function () {
+    $('.stretch').each(function () {
         $(this).strech_text();
+    });
+});
+
+$(document).ready(function ($) {
+    $('body').css({
+        'opacity': '1',
+        'overflow': 'auto'
     });
 });
 
@@ -51,7 +58,7 @@ $(function () {
 });
 
 $(function () {
-    var stickyHeaderTop = 100;
+    var stickyHeaderTop = 50;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > stickyHeaderTop) {
@@ -62,7 +69,7 @@ $(function () {
     });
 });
 $(function () {
-    var stickyHeaderTop = 200;
+    var stickyHeaderTop = 150;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > stickyHeaderTop) {
@@ -73,7 +80,7 @@ $(function () {
     });
 });
 $(function () {
-    var stickyHeaderTop = 300;
+    var stickyHeaderTop = 250;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > stickyHeaderTop) {
