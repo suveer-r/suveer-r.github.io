@@ -207,8 +207,8 @@ nav ul a:hover {
     }
 
     100% {
-        -webkit-transform: translate3d(0, 0);
-        transform: translate3d(0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -219,13 +219,13 @@ nav ul a:hover {
     }
 
     50% {
-        -webkit-transform: translate3d(-5px, 0px, 0);
-        transform: translate3d(-5px, 0px, 0);
+        -webkit-transform: translate3d(-3px, 0px, 0);
+        transform: translate3d(-3px, 0px, 0);
     }
 
     100% {
-        -webkit-transform: translate3d(0, 0);
-        transform: translate3d(0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
