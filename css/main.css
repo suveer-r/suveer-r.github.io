@@ -1135,7 +1135,7 @@ uline {
     position: relative;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    bottom: 3vw;
+/*    bottom: 3vw;*/
     width: 100%;
     margin: 0 auto;
     height: 14px;
@@ -1147,7 +1147,7 @@ uline {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 3rem;
+    bottom: 6rem;
 }
 
 #arrow-down1 .arrow {
