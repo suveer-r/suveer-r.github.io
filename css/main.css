@@ -546,8 +546,7 @@ nav #big-nav li a {
     }
 }
 
-body.loaded .head .logo,
-body.loaded #go-down {
+body.loaded .head .logo {
     -webkit-animation: loaded .5s ease-in;
     animation: loaded .5s ease-in;
     -webkit-animation-fill-mode: forwards;
@@ -584,7 +583,8 @@ body.loaded #go-down {
 
 body.loaded .head h2,
 body.loaded .head .caption,
-body.loaded .head #subtext {
+body.loaded .head #subtext,
+body.loaded #go-down {
     -webkit-animation: loaded2 .5s ease-in;
     animation: loaded2 .5s ease-in;
     -webkit-animation-fill-mode: forwards;
@@ -624,8 +624,8 @@ body.loaded navbar {
     animation: loaded3 0.5s ease-in;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
 }
 
 @-webkit-keyframes loaded3 {
@@ -1135,7 +1135,7 @@ uline {
     position: relative;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-/*    bottom: 3vw;*/
+    /*    bottom: 3vw;*/
     width: 100%;
     margin: 0 auto;
     height: 14px;
@@ -1150,7 +1150,8 @@ uline {
     bottom: 6rem;
 }
 
-#arrow-down1 .arrow, #arrow-up .arrow {
+#arrow-down1 .arrow,
+#arrow-up .arrow {
     fill: var(--light3);
     fill-opacity: 0;
     -webkit-animation: filling 3s ease-in-out infinite;
