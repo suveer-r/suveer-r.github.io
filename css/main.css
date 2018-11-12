@@ -1143,11 +1143,12 @@ uline {
 
 #go-down {
     opacity: 0;
+    height: 3rem;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 6rem;
+    bottom: 5rem;
 }
 
 #arrow-down1 .arrow,
@@ -1220,12 +1221,18 @@ uline {
     left: 1em;
     background: transparent;
     color: var(--light3);
+
 }
 
-.git:before,
-.git:after {
-    content: ' / ';
+.git span:after {
+    border: 2px var(--light3) solid;
+    /*
+    border-radius: 5px;
+    padding: 5px;
+*/
 }
+
+.git:hover {}
 
 .head {
     -ms-flex-item-align: start;
