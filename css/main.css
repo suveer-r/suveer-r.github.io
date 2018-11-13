@@ -1216,9 +1216,9 @@ uline {
 
 .git {
     position: fixed;
-    font-size: .8em;
-    bottom: 1em;
-    left: 1em;
+    font-size: 0.8em;
+    bottom: 2em;
+    left: .8em;
     background: transparent;
     color: var(--light3);
 
@@ -1239,4 +1239,9 @@ uline {
     align-self: flex-start;
     width: 100%;
     max-width: 600px;
+}
+
+#license a {
+    color: #fff !important;
+    text-decoration: underline;
 }
