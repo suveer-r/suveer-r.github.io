@@ -11,7 +11,6 @@ $(document).ready(function ($) {
     $('body').addClass('loaded');
 });
 
-
 //stretch text, append .stretch
 $.fn.strech_text = function () {
     var elmt = $(this),
@@ -91,7 +90,6 @@ $(function () {
 $(window).scroll(function () {
 
     var wScroll = $(this).scrollTop();
-
     if (wScroll > $('.charts').offset().top - ($(window).height() / 2)) {
 
         $('.radar-box').css({
