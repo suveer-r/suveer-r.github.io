@@ -352,8 +352,6 @@ nav ul a:hover {
     background-color: var(--mycol-1);
 }
 
-.footer.scrolled {}
-
 .footer-child p {
     margin-right: -5px;
     cursor: crosshair;
@@ -476,10 +474,6 @@ nav #big-nav li a {
     position: absolute;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-}
-
-.menu-2 {
-    /*    background-color: rgba(239, 239, 239, 0);*/
 }
 
 .menu-2:hover {
@@ -912,9 +906,6 @@ body.loaded navbar {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.quote {}
-
 .quote:after {
     content: '';
     left: 10%;
@@ -1454,8 +1445,6 @@ body.loaded #go-down {
     padding: 5px;
 */
 }
-
-.git:hover {}
 
 .head {
     /*
