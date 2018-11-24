@@ -61,9 +61,9 @@ nav ul a:hover {
 
 .sidenav {
     height: 100%;
-    width: 65%;
+    width: 70%;
     padding-top: 64px;
-    background-color: var(--mycol-1);
+    background: linear-gradient(-45deg, var(--mycol-1) 0%, #00bfa9e3 50%, var(--mycol-2) 200%);
     z-index: 998;
 }
 
@@ -352,6 +352,7 @@ nav ul a:hover {
     background-color: var(--mycol-1);
 }
 
+
 .footer-child p {
     margin-right: -5px;
     cursor: crosshair;
@@ -439,6 +440,7 @@ nav #big-nav li a {
 
 .sidenav-trigger {
     margin-top: -3px !important;
+    margin-left: 8px !important;
 }
 
 .sidenav-trigger:after {
@@ -474,10 +476,6 @@ nav #big-nav li a {
     position: absolute;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-}
-
-.menu-2:hover {
-    border-color: #05e8b4;
 }
 
 .menu-2:before,
@@ -1445,7 +1443,6 @@ body.loaded #go-down {
     padding: 5px;
 */
 }
-
 .head {
     /*
     -ms-flex-item-align: start;

@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $('.sidenav').sidenav();
+    $('.sidenav').sidenav({
+        preventScrolling = false
+    });
     $('.scrollspy').scrollSpy();
     $('.tooltipped').tooltip();
     $('.stretch').each(function () {
