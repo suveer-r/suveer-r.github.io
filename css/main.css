@@ -12,7 +12,7 @@
 
 /*color variables*/
 :root {
-    --mycol-1: #00bfa9;
+    --mycol-1: rgb(0, 191, 169);
     --accent: #00ffa9;
     --mycol-2: #0076bf;
     --accent-2: #00a1b1;
@@ -809,7 +809,8 @@ body.loaded navbar {
 ::-webkit-scrollbar {
     width: 0.4rem;
     height: 0.4rem;
-    background-color: rgba(0, 191, 169, 0.95);
+    background-color: var(--mycol-1);
+    opacity: .95;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -818,7 +819,8 @@ body.loaded navbar {
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(0, 191, 169, 0.27);
+    background: var(--mycol-1);
+    opacity: .27;
 }
 
 .hide-on-hover:hover {
