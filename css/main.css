@@ -76,11 +76,11 @@ nav ul a:hover {
 }
 
 .greenblue {
-    background-color: #00a1b1 !important;
+    background-color: var(--accent-2) !important;
 }
 
 .greenblue-text {
-    color: #00a1b1 !important;
+    color: var(--accent-2) !important;
 }
 
 .green3 {
@@ -1180,12 +1180,12 @@ uline {
 }
 
 #ai {
-    background: #00a1b1;
+    background: var(--accent-2);
     width: 94%;
 }
 
 #ps {
-    background: #00a1b1;
+    background: var(--accent-2);
     width: 90%;
 }
 
