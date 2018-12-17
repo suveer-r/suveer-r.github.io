@@ -1,5 +1,7 @@
 👋
+
 https://sennus.xyz 
+
 Personal website | Sentio Magnus | by Suveer
 
 [![dependencies Status](https://david-dm.org/cla1rvoyant/cla1rvoyant.github.io/status.svg)](https://david-dm.org/cla1rvoyant/cla1rvoyant.github.io)
