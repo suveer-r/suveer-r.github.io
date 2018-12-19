@@ -53,3 +53,67 @@
 .orange3-text {
     color: var(--orange3) !important;
 }
+
+#q-prim path {
+    fill: var(--mycol-1);
+}
+
+#q-sec path {
+    fill: var(--mycol-2);
+}
+
+#q-accent path {
+    fill: var(--accent);
+}
+
+#q-accent2 path {
+    fill: var(--accent-2);
+}
+
+#q-light path {
+    fill: var(--light3);
+}
+
+#q-dark path {
+    fill: var(--dark3);
+}
+
+#sr-prim path {
+    fill: var(--mycol-1);
+}
+
+#sr-sec path {
+    fill: var(--mycol-2);
+}
+
+#sr-accent path {
+    fill: var(--accent);
+}
+
+#sr-accent2 path {
+    fill: var(--accent-2);
+}
+
+#sr-light path {
+    fill: var(--light3);
+}
+
+#bat-prim path {
+    fill: var(--mycol-1);
+}
+
+#bat-sec path {
+    fill: var(--mycol-2);
+}
+
+#bat-accent path {
+    fill: var(--accent);
+}
+
+#bat-accent2 path {
+    fill: var(--accent-2);
+}
+
+#bat-dark path {
+    fill: var(--dark3);
+}
