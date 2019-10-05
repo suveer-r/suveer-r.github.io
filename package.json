@@ -20,7 +20,5 @@
     "url": "https://github.com/cla1rvoyant/cla1rvoyant.github.io/issues"
   },
   "homepage": "https://github.com/cla1rvoyant/cla1rvoyant.github.io#readme",
-  "dependencies": {
-    "package.json": "^2.0.1"
-  }
+  "dependencies": {}
 }
