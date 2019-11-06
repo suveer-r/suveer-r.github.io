@@ -1,24 +1,64 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "description": "👋",
+  "name": "sennus",
+  "version": "1.1.0",
+  "description": "personal website - final deployment",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cla1rvoyant/cla1rvoyant.github.io.git"
   },
   "keywords": [
     "suveer",
-    "sennus"
+    "raina",
+    "sennus",
+    "web",
+    "development",
+    "design",
+    "UI",
+    "UX",
+    "graphic",
+    "designer",
+    "iconography",
+    "icon",
+    "logo",
+    "front",
+    "end",
+    "dev"
   ],
-  "author": "Suveer Raina",
+  "author": {
+    "name": "Suveer Raina",
+    "url": "https://sennus.xyz"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cla1rvoyant/cla1rvoyant.github.io/issues"
   },
   "homepage": "https://github.com/cla1rvoyant/cla1rvoyant.github.io#readme",
-  "dependencies": {}
+  "dependencies": {
+    "@types/del": "^4.0.0",
+    "clipboard": "^2.0.4",
+    "flexboxgrid": "^6.3.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.6.1",
+    "cssnano": "4.1.10",
+    "del": "3.0.0",
+    "gulp": "4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatmap": "1.0.2",
+    "gulp-header": "2.0.5",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jshint": "2.1.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-terser": "1.1.7",
+    "jshint": "2.9.6",
+    "jshint-stylish": "2.2.1",
+    "lazypipe": "1.0.1"
+  }
 }

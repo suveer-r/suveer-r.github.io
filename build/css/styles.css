@@ -1,130 +1,15 @@
-.bluegreen {
-  background-color: var(--mycol-1) !important;
-}
+/*! sennus v1.1.0 | (c) 2019 Suveer Raina
+ | MIT License
+ | git+https://github.com/cla1rvoyant/cla1rvoyant.github.io.git */
 
-.bluegreen-text {
-  color: var(--mycol-1) !important;
-}
-
-.greenblue {
-  background-color: var(--accent-2) !important;
-}
-
-.greenblue-text {
-  color: var(--accent-2) !important;
-}
-
-.green3 {
-  background-color: var(--accent);
-}
-
-.green3-text {
-  color: var(--accent);
-}
-
-.blue3 {
-  background-color: var(--mycol-2) !important;
-}
-
-.blue3-text {
-  color: var(--mycol-2) !important;
-}
-
-.light3 {
-  background-color: var(--light3);
-}
-
-.light3-text {
-  color: var(--light3);
-}
-
-.dark3 {
-  background-color: var(--dark3);
-}
-
-.dark3-text {
-  color: var(--dark3);
-}
-
-.orange3 {
-  background-color: var(--orange3) !important;
-}
-
-.orange3-text {
-  color: var(--orange3) !important;
-}
-
-#q-prim path {
-  fill: var(--mycol-1);
-}
-
-#q-sec path {
-  fill: var(--mycol-2);
-}
-
-#q-accent path {
-  fill: var(--accent);
-}
-
-#q-accent2 path {
-  fill: var(--accent-2);
-}
-
-#q-light path {
-  fill: var(--light3);
-}
-
-#q-dark path {
-  fill: var(--dark3);
-}
-
-#sr-prim path {
-  fill: var(--mycol-1);
-}
-
-#sr-sec path {
-  fill: var(--mycol-2);
-}
-
-#sr-accent path {
-  fill: var(--accent);
-}
-
-#sr-accent2 path {
-  fill: var(--accent-2);
-}
-
-#sr-light path {
-  fill: var(--light3);
-}
-
-#bat-prim path {
-  fill: var(--mycol-1);
-}
-
-#bat-sec path {
-  fill: var(--mycol-2);
-}
-
-#bat-accent path {
-  fill: var(--accent);
-}
-
-#bat-accent2 path {
-  fill: var(--accent-2);
-}
-
-#bat-dark path {
-  fill: var(--dark3);
-}
-
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+/* line 11, node_modules/normalize.css/normalize.css */
 html {
   line-height: 1.15;
   /* 1 */
@@ -133,32 +18,42 @@ html {
 }
 
 /* Sections
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove the margin in all browsers.
-   */
+ * Remove the margin in all browsers.
+ */
+/* line 23, node_modules/normalize.css/normalize.css */
 body {
   margin: 0;
 }
 
 /**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, node_modules/normalize.css/normalize.css */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, node_modules/normalize.css/normalize.css */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /* Grouping content
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, node_modules/normalize.css/normalize.css */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -167,9 +62,10 @@ hr {
 }
 
 /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, node_modules/normalize.css/normalize.css */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -178,18 +74,20 @@ pre {
 }
 
 /* Text-level semantics
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove the gray background on active links in IE 10.
-   */
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, node_modules/normalize.css/normalize.css */
 a {
   background-color: transparent;
 }
 
 /**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, node_modules/normalize.css/normalize.css */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -201,17 +99,19 @@ abbr[title] {
 }
 
 /**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, node_modules/normalize.css/normalize.css */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, node_modules/normalize.css/normalize.css */
 code,
 kbd,
 samp {
@@ -222,16 +122,18 @@ samp {
 }
 
 /**
-   * Add the correct font size in all browsers.
-   */
+ * Add the correct font size in all browsers.
+ */
+/* line 116, node_modules/normalize.css/normalize.css */
 small {
   font-size: 80%;
 }
 
 /**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, node_modules/normalize.css/normalize.css */
 sub,
 sup {
   font-size: 75%;
@@ -240,29 +142,33 @@ sup {
   vertical-align: baseline;
 }
 
+/* line 133, node_modules/normalize.css/normalize.css */
 sub {
   bottom: -0.25em;
 }
 
+/* line 137, node_modules/normalize.css/normalize.css */
 sup {
   top: -0.5em;
 }
 
 /* Embedded content
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove the border on images inside links in IE 10.
-   */
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, node_modules/normalize.css/normalize.css */
 img {
   border-style: none;
 }
 
 /* Forms
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, node_modules/normalize.css/normalize.css */
 button,
 input,
 optgroup,
@@ -279,9 +185,10 @@ textarea {
 }
 
 /**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, node_modules/normalize.css/normalize.css */
 button,
 input {
   /* 1 */
@@ -289,9 +196,10 @@ input {
 }
 
 /**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, node_modules/normalize.css/normalize.css */
 button,
 select {
   /* 1 */
@@ -299,8 +207,9 @@ select {
 }
 
 /**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, node_modules/normalize.css/normalize.css */
 button,
 [type="button"],
 [type="reset"],
@@ -309,8 +218,9 @@ button,
 }
 
 /**
-   * Remove the inner border and padding in Firefox.
-   */
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, node_modules/normalize.css/normalize.css */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -320,8 +230,9 @@ button::-moz-focus-inner,
 }
 
 /**
-   * Restore the focus styles unset by the previous rule.
-   */
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, node_modules/normalize.css/normalize.css */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -330,21 +241,22 @@ button:-moz-focusring,
 }
 
 /**
-   * Correct the padding in Firefox.
-   */
+ * Correct the padding in Firefox.
+ */
+/* line 229, node_modules/normalize.css/normalize.css */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, node_modules/normalize.css/normalize.css */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -359,44 +271,48 @@ legend {
 }
 
 /**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, node_modules/normalize.css/normalize.css */
 progress {
   vertical-align: baseline;
 }
 
 /**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, node_modules/normalize.css/normalize.css */
 textarea {
   overflow: auto;
 }
 
 /**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, node_modules/normalize.css/normalize.css */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
 }
 
 /**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, node_modules/normalize.css/normalize.css */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, node_modules/normalize.css/normalize.css */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -405,16 +321,18 @@ textarea {
 }
 
 /**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, node_modules/normalize.css/normalize.css */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, node_modules/normalize.css/normalize.css */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -423,37 +341,193 @@ textarea {
 }
 
 /* Interactive
-     ========================================================================== */
+   ========================================================================== */
 /*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, node_modules/normalize.css/normalize.css */
 details {
   display: block;
 }
 
 /*
-   * Add the correct display in all browsers.
-   */
+ * Add the correct display in all browsers.
+ */
+/* line 328, node_modules/normalize.css/normalize.css */
 summary {
   display: list-item;
 }
 
 /* Misc
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Add the correct display in IE 10+.
-   */
+ * Add the correct display in IE 10+.
+ */
+/* line 339, node_modules/normalize.css/normalize.css */
 template {
   display: none;
 }
 
 /**
-   * Add the correct display in IE 10.
-   */
+ * Add the correct display in IE 10.
+ */
+/* line 347, node_modules/normalize.css/normalize.css */
 [hidden] {
   display: none;
 }
 
+/* My Colours */
+/* line 3, src/scss/components/_mycolors.scss */
+.bluegreen {
+  background-color: var(--mycol-1) !important;
+}
+
+/* line 7, src/scss/components/_mycolors.scss */
+.bluegreen-text {
+  color: var(--mycol-1) !important;
+}
+
+/* line 11, src/scss/components/_mycolors.scss */
+.greenblue {
+  background-color: var(--accent-2) !important;
+}
+
+/* line 15, src/scss/components/_mycolors.scss */
+.greenblue-text {
+  color: var(--accent-2) !important;
+}
+
+/* line 19, src/scss/components/_mycolors.scss */
+.green3 {
+  background-color: var(--accent);
+}
+
+/* line 23, src/scss/components/_mycolors.scss */
+.green3-text {
+  color: var(--accent);
+}
+
+/* line 27, src/scss/components/_mycolors.scss */
+.blue3 {
+  background-color: var(--mycol-2) !important;
+}
+
+/* line 31, src/scss/components/_mycolors.scss */
+.blue3-text {
+  color: var(--mycol-2) !important;
+}
+
+/* line 35, src/scss/components/_mycolors.scss */
+.light3 {
+  background-color: var(--light3);
+}
+
+/* line 39, src/scss/components/_mycolors.scss */
+.light3-text {
+  color: var(--light3);
+}
+
+/* line 43, src/scss/components/_mycolors.scss */
+.dark3 {
+  background-color: var(--dark3);
+}
+
+/* line 47, src/scss/components/_mycolors.scss */
+.dark3-text {
+  color: var(--dark3);
+}
+
+/* line 51, src/scss/components/_mycolors.scss */
+.orange3 {
+  background-color: var(--orange3) !important;
+}
+
+/* line 55, src/scss/components/_mycolors.scss */
+.orange3-text {
+  color: var(--orange3) !important;
+}
+
+/* line 59, src/scss/components/_mycolors.scss */
+#q-prim path {
+  fill: var(--mycol-1);
+}
+
+/* line 63, src/scss/components/_mycolors.scss */
+#q-sec path {
+  fill: var(--mycol-2);
+}
+
+/* line 67, src/scss/components/_mycolors.scss */
+#q-accent path {
+  fill: var(--accent);
+}
+
+/* line 71, src/scss/components/_mycolors.scss */
+#q-accent2 path {
+  fill: var(--accent-2);
+}
+
+/* line 75, src/scss/components/_mycolors.scss */
+#q-light path {
+  fill: var(--light3);
+}
+
+/* line 79, src/scss/components/_mycolors.scss */
+#q-dark path {
+  fill: var(--dark3);
+}
+
+/* line 83, src/scss/components/_mycolors.scss */
+#sr-prim path {
+  fill: var(--mycol-1);
+}
+
+/* line 87, src/scss/components/_mycolors.scss */
+#sr-sec path {
+  fill: var(--mycol-2);
+}
+
+/* line 91, src/scss/components/_mycolors.scss */
+#sr-accent path {
+  fill: var(--accent);
+}
+
+/* line 95, src/scss/components/_mycolors.scss */
+#sr-accent2 path {
+  fill: var(--accent-2);
+}
+
+/* line 99, src/scss/components/_mycolors.scss */
+#sr-light path {
+  fill: var(--light3);
+}
+
+/* line 103, src/scss/components/_mycolors.scss */
+#bat-prim path {
+  fill: var(--mycol-1);
+}
+
+/* line 107, src/scss/components/_mycolors.scss */
+#bat-sec path {
+  fill: var(--mycol-2);
+}
+
+/* line 111, src/scss/components/_mycolors.scss */
+#bat-accent path {
+  fill: var(--accent);
+}
+
+/* line 115, src/scss/components/_mycolors.scss */
+#bat-accent2 path {
+  fill: var(--accent-2);
+}
+
+/* line 119, src/scss/components/_mycolors.scss */
+#bat-light path {
+  fill: var(--light3);
+}
+
+/* line 1, src/scss/components/_page.scss */
 * {
   margin: 0;
   padding: 0;
@@ -466,26 +540,31 @@ template {
   stroke: none;
 }
 
+/* line 13, src/scss/components/_page.scss */
 html,
 .st1 {
   font-family: Lato, sans-serif;
   font-weight: normal;
 }
 
+/* line 18, src/scss/components/_page.scss */
 body {
-  background: var(--mycol-1);
+  background: var(--light3);
   opacity: 1;
 }
 
+/* line 24, src/scss/components/_page.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* line 29, src/scss/components/_page.scss */
 h3 {
   line-height: 130%;
 }
 
+/* line 33, src/scss/components/_page.scss */
 .zero {
   top: 0;
   left: 0;
@@ -493,7 +572,6 @@ h3 {
   height: 100vh;
   width: 100%;
   padding: 64px 0;
-  -webkit-transform-origin: top;
   transform-origin: top;
   background-color: var(--mycol-1);
   background: var(--mycol-1);
@@ -501,6 +579,7 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--mycol-1)', endColorstr='var(--mycol-2)', GradientType=1);
 }
 
+/* line 48, src/scss/components/_page.scss */
 .first {
   padding-top: 64px;
   position: relative;
@@ -508,6 +587,7 @@ h3 {
   background-color: var(--light3);
 }
 
+/* line 55, src/scss/components/_page.scss */
 .second {
   padding-top: 64px;
   position: relative;
@@ -515,16 +595,17 @@ h3 {
   background-color: var(--light3);
 }
 
+/* line 63, src/scss/components/_page.scss */
 .third {
   padding-top: 64px;
   position: relative;
   /*    min-height: 100vh;*/
-  padding-bottom: 64px;
   width: 100%;
-  margin-bottom: 400px;
   background-color: var(--dark3);
+  margin-bottom: 400px;
 }
 
+/* line 73, src/scss/components/_page.scss */
 .fourth {
   position: relative;
   /*    padding-top: 64px;*/
@@ -532,6 +613,7 @@ h3 {
   background: var(--light3);
 }
 
+/* line 80, src/scss/components/_page.scss */
 .zero:after,
 .first:after,
 .second:after,
@@ -545,14 +627,17 @@ h3 {
   clear: both;
 }
 
+/* line 93, src/scss/components/_page.scss */
 .margin-top {
   margin-top: 200px;
 }
 
+/* line 97, src/scss/components/_page.scss */
 .margin-bot {
   margin-bottom: 2em;
 }
 
+/* line 101, src/scss/components/_page.scss */
 .first .container .big-img,
 .second .container .big-img,
 .third .container .big-img {
@@ -560,15 +645,17 @@ h3 {
   animation: simpleHoverY 6s ease-in-out infinite;
 }
 
+/* line 108, src/scss/components/_page.scss */
 .content h4 span {
-  -webkit-box-shadow: inset 0 -0.7rem var(--accent);
   box-shadow: inset 0 -0.7rem var(--accent);
 }
 
+/* line 113, src/scss/components/_page.scss */
 .social {
   height: 64px;
 }
 
+/* line 117, src/scss/components/_page.scss */
 .footer {
   z-index: 999;
   position: fixed;
@@ -582,22 +669,26 @@ h3 {
   background-color: var(--mycol-1);
 }
 
+/* line 130, src/scss/components/_page.scss */
 .footer {
   -webkit-clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
   background-color: var(--mycol-1);
 }
 
+/* line 136, src/scss/components/_page.scss */
 .footer-child p {
   margin-right: -5px;
   cursor: crosshair;
   color: var(--light3);
 }
 
+/* line 142, src/scss/components/_page.scss */
 .footer-child {
   margin: auto 3% auto auto;
 }
 
+/* line 146, src/scss/components/_page.scss */
 .footer-main {
   height: 400px;
   z-index: -1;
@@ -607,19 +698,21 @@ h3 {
   bottom: 0;
 }
 
+/* line 155, src/scss/components/_page.scss */
 .logo {
   margin: 0;
   opacity: 1;
   vertical-align: middle;
-  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
+/* line 163, src/scss/components/_page.scss */
 .logo svg#logo-svg-main {
   height: 100%;
   width: 100%;
 }
 
+/* line 169, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st0 {
   fill: none;
   stroke: #FFFFFF;
@@ -635,6 +728,7 @@ h3 {
   animation-delay: 0.5s;
 }
 
+/* line 184, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st1 {
   fill: none;
   stroke: #FFFFFF;
@@ -650,6 +744,7 @@ h3 {
   animation-delay: 0.5s;
 }
 
+/* line 198, src/scss/components/_page.scss */
 .loaded #logo-svg-main .st2 {
   fill: none;
   stroke: #FFFFFF;
@@ -666,12 +761,13 @@ h3 {
 }
 
 @media only screen and (min-width: 601px) {
+  /* line 214, src/scss/components/_page.scss */
   .logo.scrolled {
-    -webkit-transform: scale(0.2);
     transform: scale(0.2);
   }
 }
 
+/* line 221, src/scss/components/_page.scss */
 .loaded #logo-svg-main #left-arrows,
 .loaded #logo-svg-main #middle-arrows,
 .loaded #logo-svg-main #right-arrows {
@@ -683,6 +779,7 @@ h3 {
   animation-timing-function: linear;
 }
 
+/* line 231, src/scss/components/_page.scss */
 .loaded #logo-svg-main:hover #left-arrows,
 .loaded #logo-svg-main:hover #middle-arrows,
 .loaded #logo-svg-main:hover #right-arrows {
@@ -690,60 +787,61 @@ h3 {
   animation-play-state: paused;
 }
 
+/* line 237, src/scss/components/_page.scss */
 .loaded #logo-svg-main #left-arrows {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
-  -webkit-transform-origin: -56px center;
   transform-origin: -56px center;
 }
 
+/* line 246, src/scss/components/_page.scss */
 .loaded #logo-svg-main #middle-arrows {
   -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
-  -webkit-transform-origin: 217px center;
   transform-origin: 217px center;
 }
 
+/* line 255, src/scss/components/_page.scss */
 .loaded #logo-svg-main #right-arrows {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
-  -webkit-transform-origin: 490px center;
   transform-origin: 490px center;
 }
 
+/* line 264, src/scss/components/_page.scss */
 .head h2,
 .head .caption,
 .head #subtext {
   opacity: 1;
 }
 
+/* line 271, src/scss/components/_page.scss */
 .intro-logo {
   /*    overflow: hidden;*/
   margin: auto;
   width: 100%;
 }
 
+/* line 277, src/scss/components/_page.scss */
 .valign-wrapper1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 50%;
   /*    margin-left: 50%;*/
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
+/* line 289, src/scss/components/_page.scss */
 .hide-on-hover:hover {
   display: none;
 }
 
+/* line 293, src/scss/components/_page.scss */
 .desc {
   margin-top: 5px;
   border-top: 1.2px dashed #fff;
@@ -752,41 +850,50 @@ h3 {
   margin: 0 auto;
 }
 
+/* line 301, src/scss/components/_page.scss */
 .num-big {
   /*    line-height: 2.7rem;*/
   font-size: 2.7rem;
 }
 
+/* line 306, src/scss/components/_page.scss */
 .content {
   /*    top: 30%;*/
   margin: auto;
 }
 
+/* line 312, src/scss/components/_page.scss */
 .padding {
   padding: 1em !important;
 }
 
+/* line 316, src/scss/components/_page.scss */
 .padding-bot {
   padding-bottom: 1em !important;
 }
 
+/* line 320, src/scss/components/_page.scss */
 .padding-top {
   padding-top: 1em !important;
 }
 
+/* line 324, src/scss/components/_page.scss */
 .padding-right {
   padding-right: 1em !important;
 }
 
+/* line 328, src/scss/components/_page.scss */
 .padding-left {
   padding-left: 1em !important;
 }
 
+/* line 332, src/scss/components/_page.scss */
 .caption {
   position: relative;
   top: -1em;
 }
 
+/* line 337, src/scss/components/_page.scss */
 .divider {
   position: relative;
   /*    top: 64px;*/
@@ -795,10 +902,10 @@ h3 {
   margin: 0 auto;
   overflow: hidden;
   background: var(--mycol-1);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), color-stop(50%, #fff), to(rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, #fff 50%, rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, var(--dark3) 50%, rgba(255, 255, 255, 0.1) 100%);
 }
 
+/* line 349, src/scss/components/_page.scss */
 .divider:after,
 .divider:before {
   content: "";
@@ -806,6 +913,7 @@ h3 {
   clear: both;
 }
 
+/* line 356, src/scss/components/_page.scss */
 .flowing-text {
   margin: 1.9rem auto !important;
   height: inherit;
@@ -815,6 +923,7 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+/* line 365, src/scss/components/_page.scss */
 .flowing-text-rev {
   margin: 1.9rem auto !important;
   background: linear-gradient(135deg, var(--mycol-1) 31%, var(--mycol-2) 150%);
@@ -823,294 +932,303 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+/* line 372, src/scss/components/_page.scss */
 .quote:after {
   content: '';
   left: 10%;
-  -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   position: absolute;
   margin: 0 auto;
   width: 80%;
   height: 1px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), color-stop(50%, var(--orange3)), to(rgba(255, 255, 255, 0.1)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, var(--orange3) 50%, rgba(255, 255, 255, 0.1) 100%);
 }
 
+/* line 385, src/scss/components/_page.scss */
 uline {
   text-decoration: underline;
   text-transform: capitalize;
 }
 
+/* line 390, src/scss/components/_page.scss */
 .stretch_it {
   white-space: nowrap;
 }
 
+/* line 394, src/scss/components/_page.scss */
 .justify {
   text-align: justify;
 }
 
+/* line 398, src/scss/components/_page.scss */
 .palette {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 0;
+  margin-left: 0;
 }
 
+/* line 404, src/scss/components/_page.scss */
 .palette-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: center;
   font-size: 0.8rem;
   height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  border-radius: 10%;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
 
+/* line 416, src/scss/components/_page.scss */
 .fb {
   width: 100%;
   height: 100%;
   background: #3b5998;
   color: #ffffff !important;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
+/* line 428, src/scss/components/_page.scss */
 .fb h5 {
   color: #fff;
 }
 
+/* line 432, src/scss/components/_page.scss */
 .fb:hover {
-  -webkit-box-shadow: inset 0 -100px #fff;
   box-shadow: inset 0 -100px #fff;
 }
 
+/* line 437, src/scss/components/_page.scss */
 .fb:hover h5 {
   color: #3b5998;
 }
 
+/* line 441, src/scss/components/_page.scss */
 .twit {
   width: 100%;
   height: 100%;
   background: #1da1f2;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
+/* line 452, src/scss/components/_page.scss */
 .twit h5 {
   color: #fff;
 }
 
+/* line 456, src/scss/components/_page.scss */
 .twit:hover {
-  -webkit-box-shadow: inset 0 -100px #fff;
   box-shadow: inset 0 -100px #fff;
 }
 
+/* line 461, src/scss/components/_page.scss */
 .twit:hover h5 {
   color: #1da1f2;
 }
 
+/* line 465, src/scss/components/_page.scss */
 .insta {
   width: 100%;
   height: 100%;
   background: #c32aa3;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
+/* line 476, src/scss/components/_page.scss */
 .insta h5 {
   color: #fff;
 }
 
+/* line 480, src/scss/components/_page.scss */
 .insta:hover {
-  -webkit-box-shadow: inset 0 -100px #fff;
   box-shadow: inset 0 -100px #fff;
 }
 
+/* line 485, src/scss/components/_page.scss */
 .insta:hover h5 {
   color: #c32aa3;
 }
 
+/* line 489, src/scss/components/_page.scss */
 .behance {
   width: 100%;
   height: 100%;
   background: #000;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
+/* line 500, src/scss/components/_page.scss */
 .behance h5 {
   color: #fff;
 }
 
+/* line 504, src/scss/components/_page.scss */
 .behance:hover {
-  -webkit-box-shadow: inset 0 -100px #fff;
   box-shadow: inset 0 -100px #fff;
 }
 
+/* line 509, src/scss/components/_page.scss */
 .behance:hover h5 {
   color: #000;
 }
 
+/* line 513, src/scss/components/_page.scss */
 .dribbble {
   width: 100%;
   height: 100%;
   background: #ea4c89;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
+/* line 524, src/scss/components/_page.scss */
 .dribbble:hover {
-  -webkit-box-shadow: inset 0 -100px #fff;
   box-shadow: inset 0 -100px #fff;
 }
 
+/* line 529, src/scss/components/_page.scss */
 .dribbble h5 {
   color: #fff;
 }
 
+/* line 533, src/scss/components/_page.scss */
 .dribbble:hover h5 {
   color: #ea4c89;
 }
 
+/* line 537, src/scss/components/_page.scss */
 .discord {
   cursor: help;
   width: 100%;
   height: 100%;
   background: #7289da;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
+/* line 549, src/scss/components/_page.scss */
 .discord:hover {
   content: 'testing';
-  -webkit-box-shadow: inset 0 -100px #fff;
   box-shadow: inset 0 -100px #fff;
 }
 
+/* line 555, src/scss/components/_page.scss */
 .discord h5 {
   color: #fff;
 }
 
+/* line 559, src/scss/components/_page.scss */
 .discord:hover h5 {
   color: #7289da;
 }
 
+/* line 563, src/scss/components/_page.scss */
 .email {
   width: 100%;
   height: 100%;
   background: #444;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
+/* line 574, src/scss/components/_page.scss */
 .email:hover {
-  -webkit-box-shadow: inset 0 -100px #000;
   box-shadow: inset 0 -100px #000;
 }
 
+/* line 579, src/scss/components/_page.scss */
 .first-icons {
   height: 5rem;
 }
 
+/* line 583, src/scss/components/_page.scss */
 .brief {
   padding: 1rem 1.2rem 2vw 1.2rem !important;
   margin: 1vw 0 !important;
+  cursor: default;
 }
 
+/* line 589, src/scss/components/_page.scss */
 .green3-ul {
-  -webkit-box-shadow: inset 0 -5px var(--accent);
   box-shadow: inset 0 -5px var(--accent);
 }
 
+/* line 594, src/scss/components/_page.scss */
 .border-top-bot {
   background: #f1f1f1;
   border-top: 3px solid #ddd;
   border-bottom: 3px solid #ddd;
 }
 
+/* line 600, src/scss/components/_page.scss */
 .range {
   width: 1%;
   margin: 5px 3px;
   background: #e1e1e1;
   height: 5px;
-  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
+/* line 610, src/scss/components/_page.scss */
 .skill {
   height: 5px;
   background: transparent;
   /*    position: absolute;*/
 }
 
+/* line 616, src/scss/components/_page.scss */
 #html {
   background: #00dfa9;
   width: 96%;
 }
 
+/* line 621, src/scss/components/_page.scss */
 #css {
   background: #00dfa9;
   width: 93%;
 }
 
+/* line 626, src/scss/components/_page.scss */
 #js {
   background: var(--mycol-1);
   width: 30%;
 }
 
+/* line 631, src/scss/components/_page.scss */
 #jq {
   background: var(--mycol-1);
   width: 45%;
 }
 
+/* line 636, src/scss/components/_page.scss */
 #ai {
   background: var(--accent-2);
   width: 94%;
 }
 
+/* line 641, src/scss/components/_page.scss */
 #ps {
   background: var(--accent-2);
   width: 90%;
 }
 
+/* line 646, src/scss/components/_page.scss */
 #oth {
   background: var(--orange3);
   width: 13%;
 }
 
+/* line 651, src/scss/components/_page.scss */
 #oth2 {
   background: var(--mycol-2);
   width: 100%;
 }
 
 /*frame*/
+/* line 658, src/scss/components/_page.scss */
 .radar-frame {
   fill: none;
   stroke: #D1D1D1;
@@ -1118,11 +1236,13 @@ uline {
 }
 
 /*text*/
+/* line 665, src/scss/components/_page.scss */
 .radar-text {
   fill: #616161;
 }
 
 /*radar*/
+/* line 670, src/scss/components/_page.scss */
 .radar-box {
   fill: var(--mycol-1);
   fill-opacity: 0;
@@ -1131,11 +1251,11 @@ uline {
   stroke-miterlimit: 10;
   stroke-dasharray: 363;
   stroke-dashoffset: 363;
-  -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
 
 /*radar inner hidden*/
+/* line 683, src/scss/components/_page.scss */
 .radar-inner {
   display: none;
   fill: var(--mycol-1);
@@ -1146,10 +1266,12 @@ uline {
 }
 
 /*dots*/
+/* line 693, src/scss/components/_page.scss */
 .radar-dots {
   fill: var(--accent);
 }
 
+/* line 697, src/scss/components/_page.scss */
 #arrow-up {
   position: relative;
   top: 3vw;
@@ -1158,9 +1280,9 @@ uline {
   height: 14px;
 }
 
+/* line 705, src/scss/components/_page.scss */
 #arrow-down {
   position: relative;
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   bottom: 3vw;
   width: 100%;
@@ -1168,9 +1290,9 @@ uline {
   height: 14px;
 }
 
+/* line 715, src/scss/components/_page.scss */
 #arrow-down1 {
   position: relative;
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   /*    bottom: 3vw;*/
   width: 100%;
@@ -1178,17 +1300,18 @@ uline {
   height: 14px;
 }
 
+/* line 725, src/scss/components/_page.scss */
 #go-down {
   opacity: 0;
   height: 3rem;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: 15vh;
+  bottom: 5vh;
   padding: 1em;
 }
 
+/* line 736, src/scss/components/_page.scss */
 #arrow-down1 .arrow,
 #arrow-up .arrow {
   fill: var(--light3);
@@ -1197,6 +1320,7 @@ uline {
   animation: filling 3s ease-in-out infinite;
 }
 
+/* line 744, src/scss/components/_page.scss */
 .arrow {
   display: inline;
   fill: none;
@@ -1204,15 +1328,16 @@ uline {
   stroke-miterlimit: 10;
 }
 
+/* line 750, src/scss/components/_page.scss */
 #version {
   position: relative;
   top: 18px;
   color: var(--light3);
   opacity: 0;
-  -webkit-transform: translateX(10px);
   transform: translateX(10px);
 }
 
+/* line 758, src/scss/components/_page.scss */
 .loaded #version {
   -webkit-animation: loaded6 .5s ease-in;
   animation: loaded6 .5s ease-in;
@@ -1222,6 +1347,7 @@ uline {
   animation-delay: 2s;
 }
 
+/* line 767, src/scss/components/_page.scss */
 body.loaded #go-down {
   -webkit-animation: loaded5 .5s ease-in;
   animation: loaded5 .5s ease-in;
@@ -1231,26 +1357,31 @@ body.loaded #go-down {
   animation-delay: 2s;
 }
 
+/* line 776, src/scss/components/_page.scss */
 .toast.rounded {
   color: var(--light3) !important;
   border: 2px solid var(--mycol-1) !important;
   background: var(--dark3) !important;
 }
 
+/* line 782, src/scss/components/_page.scss */
 .toast-action {
   color: var(--light3) !important;
 }
 
+/* line 786, src/scss/components/_page.scss */
 .toast-action:hover {
   color: var(--accent) !important;
 }
 
 @media only screen and (max-width: 600px) {
+  /* line 791, src/scss/components/_page.scss */
   .toast {
     text-align: center;
   }
 }
 
+/* line 796, src/scss/components/_page.scss */
 .git {
   position: fixed;
   font-size: 0.8em;
@@ -1260,21 +1391,25 @@ body.loaded #go-down {
   color: var(--light3);
 }
 
+/* line 806, src/scss/components/_page.scss */
 .git span:after {
   border: 2px var(--light3) solid;
 }
 
+/* line 809, src/scss/components/_page.scss */
 .head {
   width: 100%;
   max-width: 600px;
 }
 
+/* line 814, src/scss/components/_page.scss */
 #license a {
   /*    color: #fff !important;*/
   text-decoration: underline;
 }
 
 /*Scrollbar*/
+/* line 821, src/scss/components/_page.scss */
 ::-webkit-scrollbar {
   width: 0.4rem;
   height: 0.4rem;
@@ -1282,30 +1417,35 @@ body.loaded #go-down {
   opacity: .95;
 }
 
+/* line 828, src/scss/components/_page.scss */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.54);
 }
 
+/* line 833, src/scss/components/_page.scss */
 ::-webkit-scrollbar-thumb:window-inactive {
   background: var(--mycol-1);
   opacity: .27;
 }
 
+/* Navigation */
+/* line 3, src/scss/components/_nav.scss */
 nav {
   color: #fff;
   background-color: transparent;
   width: 100%;
   height: 64px;
-  -webkit-box-shadow: none;
   box-shadow: none;
   line-height: 64px;
 }
 
+/* line 13, src/scss/components/_nav.scss */
 nav ul a:hover {
   background: transparent;
 }
 
+/* line 17, src/scss/components/_nav.scss */
 .sidenav {
   height: 100%;
   width: 70%;
@@ -1314,6 +1454,7 @@ nav ul a:hover {
   z-index: 998;
 }
 
+/* line 25, src/scss/components/_nav.scss */
 .navbar-fixed {
   width: 100%;
   position: fixed;
@@ -1321,100 +1462,97 @@ nav ul a:hover {
   z-index: 999;
   color: #fff;
   background: transparent;
-  -webkit-transition: background 500ms ease-in-out;
   transition: background 500ms ease-in-out;
 }
 
+/* line 36, src/scss/components/_nav.scss */
 .navbar-fixed.scrolled {
   background-color: var(--mycol-1);
   background: linear-gradient(-45deg, var(--mycol-1) 31%, var(--mycol-2) 200%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--mycol-1)', endColorstr='var(--mycol-2)', GradientType=1);
 }
 
+/* line 42, src/scss/components/_nav.scss */
 #navbar .scrolled .brand-name {
-  -webkit-transform: translateY(0px);
   transform: translateY(0px);
   opacity: 0 !important;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
+/* line 50, src/scss/components/_nav.scss */
 #navbar .scrolled #logo-svg {
-  -webkit-transform: translateY(0px) !important;
   transform: translateY(0px) !important;
   opacity: 1 !important;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
+/* line 58, src/scss/components/_nav.scss */
 .brand-logo {
   top: -64px;
   overflow: hidden;
-  -webkit-transition: top 200ms ease-in-out;
   transition: top 200ms ease-in-out;
 }
 
+/* line 65, src/scss/components/_nav.scss */
 .brand-logo #logo-svg {
-  -webkit-transition-duration: 250ms !important;
   transition-duration: 250ms !important;
-  -webkit-transition: -webkit-transform opacity ease-in-out;
-  transition: -webkit-transform opacity ease-in-out;
   transition: transform opacity ease-in-out;
-  transition: transform opacity ease-in-out, -webkit-transform opacity ease-in-out;
-  -webkit-transform: translateY(64px);
   transform: translateY(64px);
   opacity: 0;
   height: 64px;
   margin: auto;
 }
 
+/* line 74, src/scss/components/_nav.scss */
 .brand-logo .brand-name {
-  -webkit-transition-delay: 100ms;
   transition-delay: 100ms;
-  -webkit-transition-duration: 300ms !important;
   transition-duration: 300ms !important;
   opacity: 1;
-  -webkit-transform: translateY(64px);
   transform: translateY(64px);
-  -webkit-transition: -webkit-transform opacity ease-in-out;
-  transition: -webkit-transform opacity ease-in-out;
   transition: transform opacity ease-in-out;
-  transition: transform opacity ease-in-out, -webkit-transform opacity ease-in-out;
   margin: auto;
 }
 
+/* line 83, src/scss/components/_nav.scss */
 .sidenav li > a {
   color: #fff;
 }
 
+/* line 87, src/scss/components/_nav.scss */
 .sidenav li > a:hover {
   background-color: rgba(0, 255, 169, 0.18);
 }
 
+/* line 91, src/scss/components/_nav.scss */
 .sidenav li .nav-list.active {
   background-color: rgba(0, 255, 169, 0.18);
 }
 
+/* line 95, src/scss/components/_nav.scss */
 .nav-list {
   text-transform: uppercase;
   margin: auto;
 }
 
+/* line 100, src/scss/components/_nav.scss */
 #nav-cont {
   float: right;
   width: 33%;
 }
 
+/* line 105, src/scss/components/_nav.scss */
 .nav-cont {
   float: right;
 }
 
 @media only screen and (min-width: 992px) {
+  /* line 110, src/scss/components/_nav.scss */
   nav a.button-collapse {
     display: none;
   }
 }
 
+/* line 115, src/scss/components/_nav.scss */
 nav .button-collapse {
   float: left;
   position: relative;
@@ -1423,36 +1561,39 @@ nav .button-collapse {
   width: 64px;
 }
 
+/* line 123, src/scss/components/_nav.scss */
 nav #big-nav {
   position: relative;
   top: -0.5px;
 }
 
+/* line 128, src/scss/components/_nav.scss */
 nav #big-nav li {
   float: left;
   list-style: none;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   padding: 0;
 }
 
+/* line 136, src/scss/components/_nav.scss */
 nav #big-nav li:hover {
   color: #fff;
-  -webkit-box-shadow: inset 0 -4px #fff;
   box-shadow: inset 0 -4px #fff;
 }
 
+/* line 142, src/scss/components/_nav.scss */
 nav #big-nav li:hover a {
   color: #fff;
 }
 
+/* line 146, src/scss/components/_nav.scss */
 #big-nav li a.active {
   will-change: left, right;
   color: #fff;
-  -webkit-box-shadow: inset 0 5px var(--accent);
   box-shadow: inset 0 5px var(--accent);
 }
 
+/* line 153, src/scss/components/_nav.scss */
 nav #big-nav li a {
   color: #efefef;
   font-size: 1rem;
@@ -1461,16 +1602,19 @@ nav #big-nav li a {
 }
 
 @media only screen and (min-width: 601px) {
+  /* line 161, src/scss/components/_nav.scss */
   nav a.sidenav-trigger {
     display: none;
   }
 }
 
+/* line 166, src/scss/components/_nav.scss */
 .sidenav-trigger {
   margin-top: -3px !important;
   margin-left: 8px !important;
 }
 
+/* line 171, src/scss/components/_nav.scss */
 .sidenav-trigger:after {
   content: 'MENU';
   font-size: 0.7em;
@@ -1479,20 +1623,17 @@ nav #big-nav li a {
   left: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 1rem;
 }
 
+/* line 188, src/scss/components/_nav.scss */
 navbar {
-  -webkit-transform: translateY(-64px);
   transform: translateY(-64px);
 }
 
+/* line 193, src/scss/components/_nav.scss */
 body.loaded navbar {
   -webkit-animation: loaded3 0.5s ease-in;
   animation: loaded3 0.5s ease-in;
@@ -1502,24 +1643,25 @@ body.loaded navbar {
   animation-delay: 2s;
 }
 
+/* line 202, src/scss/components/_nav.scss */
 .menu-2 {
   position: relative;
   display: inline-block;
   width: 64px;
   height: 64px;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
+/* line 212, src/scss/components/_nav.scss */
 .menu-2:before,
 .menu-2:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
+/* line 220, src/scss/components/_nav.scss */
 .menu-2:before,
 .menu-2:after {
   background-color: #fff;
@@ -1530,55 +1672,53 @@ body.loaded navbar {
   margin-left: -15px;
 }
 
+/* line 230, src/scss/components/_nav.scss */
 .menu-2:before {
   margin-top: -6px;
 }
 
+/* line 234, src/scss/components/_nav.scss */
 .menu-2:after {
   margin-top: 4px;
 }
 
+/* line 238, src/scss/components/_nav.scss */
 .menu-2-active {
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
+/* line 243, src/scss/components/_nav.scss */
 .menu-2-active:before,
 .menu-2-active:after {
   margin-left: -15px !important;
   margin-top: -2px !important;
 }
 
+/* line 249, src/scss/components/_nav.scss */
 .menu-2-active:after {
-  -webkit-transform: rotate(-90deg) !important;
   transform: rotate(-90deg) !important;
 }
+/* Anims */
 @-webkit-keyframes simpleHoverY {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   50% {
-    -webkit-transform: translate3d(-3px, 0px, 0);
     transform: translate3d(-3px, 0px, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes simpleHoverY {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   50% {
-    -webkit-transform: translate3d(-3px, 0px, 0);
     transform: translate3d(-3px, 0px, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
@@ -1675,44 +1815,36 @@ body.loaded navbar {
 
 @-webkit-keyframes rotating {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
 @keyframes rotating {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes loaded3 {
   0% {
-    -webkit-transform: translateY(-64px);
     transform: translateY(-64px);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
 @keyframes loaded3 {
   0% {
-    -webkit-transform: translateY(-64px);
     transform: translateY(-64px);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -1737,17 +1869,14 @@ body.loaded navbar {
 
 @-webkit-keyframes filling {
   0% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     fill-opacity: 1;
   }
   50% {
-    -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     fill-opacity: 0.3;
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     fill-opacity: 1;
   }
@@ -1768,12 +1897,10 @@ body.loaded navbar {
 @-webkit-keyframes loaded6 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -1781,13 +1908,10 @@ body.loaded navbar {
 @keyframes loaded6 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=styles.css.map */
