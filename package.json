@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cla1rvoyant/cla1rvoyant.github.io.git"
+    "url": "git+https://github.com/suveer-r/suveer-r.github.io.git"
   },
   "keywords": [
     "suveer",
@@ -28,13 +28,13 @@
   ],
   "author": {
     "name": "Suveer Raina",
-    "url": "https://sennus.xyz"
+    "url": "https://suveer-r.github.io"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cla1rvoyant/cla1rvoyant.github.io/issues"
+    "url": "https://github.com/suveer-r/suveer-r.github.io/issues"
   },
-  "homepage": "https://github.com/cla1rvoyant/cla1rvoyant.github.io#readme",
+  "homepage": "https://github.com/suveer-r/suveer-r.github.io#readme",
   "dependencies": {
     "@types/del": "^4.0.0",
     "clipboard": "^2.0.4",
