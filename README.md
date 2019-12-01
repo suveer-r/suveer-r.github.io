@@ -1,6 +1,6 @@
 👋
 
-https://sennus.xyz 
+https://suveer-r.github.io 
 
 Personal website | Sentio Magnus | by Suveer
 
